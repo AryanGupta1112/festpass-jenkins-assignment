@@ -1,0 +1,2 @@
+# Preserve downloaded assessment evidence and artifact checksums exactly.
+submission/** -text
