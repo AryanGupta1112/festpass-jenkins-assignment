@@ -2,7 +2,7 @@ Started by user admin
 Obtained Jenkinsfile from git git://127.0.0.1:9418/festpass-java
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on student-laptop in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci
+Running on student-laptop in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected
 [Pipeline] {
 [Pipeline] timeout
 Timeout set to expire in 5 min 0 sec
@@ -14,23 +14,23 @@ Selected Git installation does not exist. Using Default
 The recommended git tool is: NONE
 No credentials specified
 Cloning the remote Git repository
+Avoid second fetch
+Checking out Revision a08efd0c88c24bdd889d5158d95db4b92c7de5c0 (refs/remotes/origin/main)
 Cloning repository git://127.0.0.1:9418/festpass-java
- > git.exe init C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci # timeout=10
+ > git.exe init C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected # timeout=10
 Fetching upstream changes from git://127.0.0.1:9418/festpass-java
  > git.exe --version # timeout=10
  > git --version # 'git version 2.45.1.windows.1'
  > git.exe fetch --tags --force --progress -- git://127.0.0.1:9418/festpass-java +refs/heads/*:refs/remotes/origin/* # timeout=10
  > git.exe config remote.origin.url git://127.0.0.1:9418/festpass-java # timeout=10
  > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
-Avoid second fetch
-Checking out Revision d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d (refs/remotes/origin/main)
  > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
  > git.exe config core.sparsecheckout # timeout=10
- > git.exe checkout -f d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d # timeout=10
+ > git.exe checkout -f a08efd0c88c24bdd889d5158d95db4b92c7de5c0 # timeout=10
 Commit message: "Configure my Jenkins assignment"
 First time build. Skipping changelog.
 [Pipeline] dir
-Running in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci\build
+Running in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected\build
 [Pipeline] {
 [Pipeline] deleteDir
 [Pipeline] }
@@ -40,8 +40,8 @@ Running in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>git log -1 --oneline   && java -version   && javac -version 
-d061dd3 Configure my Jenkins assignment
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>git log -1 --oneline   && java -version   && javac -version 
+a08efd0 Configure my Jenkins assignment
 java version "21.0.8" 2025-07-15 LTS
 Java(TM) SE Runtime Environment (build 21.0.8+12-LTS-250)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)
@@ -57,7 +57,7 @@ javac 21.0.8
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/BuildEvidence.java prepare 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/BuildEvidence.java prepare 
 Submission settings ready. Evidence will use a class-scoped hash of the computer name and a local random installation ID.
 [Pipeline] }
 [Pipeline] // script
@@ -70,7 +70,7 @@ Submission settings ready. Evidence will use a class-scoped hash of the computer
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/Build.java test 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/Build.java test 
 Compiled FestPass with Java 21.
 PASS emptyEventAcceptsBooking
 PASS lastAvailableSeatIsAccepted
@@ -155,7 +155,7 @@ Stage "Save artifact" skipped due to earlier failure(s)
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/BuildEvidence.java "FAILURE" 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/BuildEvidence.java "FAILURE" 
 Recorded submission-evidence.csv for Aryan Gupta, build 1, result FAILURE.
 [Pipeline] }
 [Pipeline] // withEnv

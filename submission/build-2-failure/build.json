@@ -23,19 +23,19 @@
           "buildNumber": 2,
           "buildResult": null,
           "marked": {
-            "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+            "SHA1": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
             "branch": [
               {
-                "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+                "SHA1": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
                 "name": "refs/remotes/origin/main"
               }
             ]
           },
           "revision": {
-            "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+            "SHA1": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
             "branch": [
               {
-                "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+                "SHA1": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
                 "name": "refs/remotes/origin/main"
               }
             ]
@@ -43,10 +43,10 @@
         }
       },
       "lastBuiltRevision": {
-        "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+        "SHA1": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
         "branch": [
           {
-            "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+            "SHA1": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
             "name": "refs/remotes/origin/main"
           }
         ]
@@ -90,17 +90,17 @@
   "building": false,
   "description": null,
   "displayName": "#2",
-  "duration": 20185,
-  "estimatedDuration": 33410,
+  "duration": 15720,
+  "estimatedDuration": 16986,
   "executor": null,
-  "fullDisplayName": "festpass-ci #2",
+  "fullDisplayName": "festpass-ci-email-corrected #2",
   "id": "2",
   "keepLog": false,
   "number": 2,
-  "queueId": 3,
+  "queueId": 9,
   "result": "FAILURE",
-  "timestamp": 1793281211201,
-  "url": "http://127.0.0.1:8081/job/festpass-ci/2/",
+  "timestamp": 1793282348558,
+  "url": "http://127.0.0.1:8081/job/festpass-ci-email-corrected/2/",
   "changeSets": [
     {
       "_class": "hudson.plugins.git.GitChangeSetList",
@@ -110,16 +110,16 @@
           "affectedPaths": [
             "src/main/java/FestPass.java"
           ],
-          "commitId": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+          "commitId": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
           "timestamp": 1793281148000,
           "author": {
-            "absoluteUrl": "http://127.0.0.1:8081/user/aryan-gupta",
-            "fullName": "aryan-gupta"
+            "absoluteUrl": "http://127.0.0.1:8081/user/aryangup17",
+            "fullName": "aryangup17"
           },
-          "authorEmail": "aryan-gupta@users.invalid",
-          "comment": "Personalize my help introduction\n",
+          "authorEmail": "aryangup17@gmail.com",
+          "comment": "Personalize my help introduction\n\n",
           "date": "2026-10-29 19:09:08 +0530",
-          "id": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+          "id": "7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8",
           "msg": "Personalize my help introduction",
           "paths": [
             {
@@ -134,14 +134,14 @@
   ],
   "culprits": [
     {
-      "absoluteUrl": "http://127.0.0.1:8081/user/aryan-gupta",
-      "fullName": "aryan-gupta"
+      "absoluteUrl": "http://127.0.0.1:8081/user/aryangup17",
+      "fullName": "aryangup17"
     }
   ],
   "inProgress": false,
   "nextBuild": null,
   "previousBuild": {
     "number": 1,
-    "url": "http://127.0.0.1:8081/job/festpass-ci/1/"
+    "url": "http://127.0.0.1:8081/job/festpass-ci-email-corrected/1/"
   }
 }

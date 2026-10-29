@@ -24,19 +24,19 @@
           "buildNumber": 1,
           "buildResult": null,
           "marked": {
-            "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+            "SHA1": "a08efd0c88c24bdd889d5158d95db4b92c7de5c0",
             "branch": [
               {
-                "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+                "SHA1": "a08efd0c88c24bdd889d5158d95db4b92c7de5c0",
                 "name": "refs/remotes/origin/main"
               }
             ]
           },
           "revision": {
-            "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+            "SHA1": "a08efd0c88c24bdd889d5158d95db4b92c7de5c0",
             "branch": [
               {
-                "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+                "SHA1": "a08efd0c88c24bdd889d5158d95db4b92c7de5c0",
                 "name": "refs/remotes/origin/main"
               }
             ]
@@ -44,10 +44,10 @@
         }
       },
       "lastBuiltRevision": {
-        "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+        "SHA1": "a08efd0c88c24bdd889d5158d95db4b92c7de5c0",
         "branch": [
           {
-            "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+            "SHA1": "a08efd0c88c24bdd889d5158d95db4b92c7de5c0",
             "name": "refs/remotes/origin/main"
           }
         ]
@@ -91,17 +91,17 @@
   "building": false,
   "description": null,
   "displayName": "#1",
-  "duration": 46634,
-  "estimatedDuration": 46634,
+  "duration": 18251,
+  "estimatedDuration": 18251,
   "executor": null,
-  "fullDisplayName": "festpass-ci #1",
+  "fullDisplayName": "festpass-ci-email-corrected #1",
   "id": "1",
   "keepLog": false,
   "number": 1,
-  "queueId": 1,
+  "queueId": 7,
   "result": "FAILURE",
-  "timestamp": 1793281090971,
-  "url": "http://127.0.0.1:8081/job/festpass-ci/1/",
+  "timestamp": 1793282307971,
+  "url": "http://127.0.0.1:8081/job/festpass-ci-email-corrected/1/",
   "changeSets": [],
   "culprits": [],
   "inProgress": false,

@@ -2,7 +2,7 @@ Started by an SCM change
 Obtained Jenkinsfile from git git://127.0.0.1:9418/festpass-java
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on student-laptop in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci
+Running on student-laptop in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected
 [Pipeline] {
 [Pipeline] timeout
 Timeout set to expire in 5 min 0 sec
@@ -14,9 +14,8 @@ Selected Git installation does not exist. Using Default
 The recommended git tool is: NONE
 No credentials specified
 Fetching changes from the remote Git repository
-Checking out Revision 70f7339de746a18f71eda7ca88a01e166472c6ca (refs/remotes/origin/main)
-Commit message: "Fix cancellation by removing the student from the event roster"
- > git.exe rev-parse --resolve-git-dir C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci\.git # timeout=10
+Checking out Revision 4cdd10d5dd95028dc985a2d3c4c1016a7a07a821 (refs/remotes/origin/main)
+ > git.exe rev-parse --resolve-git-dir C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected\.git # timeout=10
  > git.exe config remote.origin.url git://127.0.0.1:9418/festpass-java # timeout=10
 Fetching upstream changes from git://127.0.0.1:9418/festpass-java
  > git.exe --version # timeout=10
@@ -24,10 +23,11 @@ Fetching upstream changes from git://127.0.0.1:9418/festpass-java
  > git.exe fetch --tags --force --progress -- git://127.0.0.1:9418/festpass-java +refs/heads/*:refs/remotes/origin/* # timeout=10
  > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
  > git.exe config core.sparsecheckout # timeout=10
- > git.exe checkout -f 70f7339de746a18f71eda7ca88a01e166472c6ca # timeout=10
- > git.exe rev-list --no-walk cc6c21afbde5e04bd11fbffb049963a74aa33c09 # timeout=10
+Commit message: "Fix cancellation by removing the student from the event roster"
+ > git.exe checkout -f 4cdd10d5dd95028dc985a2d3c4c1016a7a07a821 # timeout=10
+ > git.exe rev-list --no-walk 7cfed4fc57fa24aad80cfb2f85e0e13a38289ab8 # timeout=10
 [Pipeline] dir
-Running in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci\build
+Running in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected\build
 [Pipeline] {
 [Pipeline] deleteDir
 [Pipeline] }
@@ -37,8 +37,8 @@ Running in C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>git log -1 --oneline   && java -version   && javac -version 
-70f7339 Fix cancellation by removing the student from the event roster
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>git log -1 --oneline   && java -version   && javac -version 
+4cdd10d Fix cancellation by removing the student from the event roster
 java version "21.0.8" 2025-07-15 LTS
 Java(TM) SE Runtime Environment (build 21.0.8+12-LTS-250)
 Java HotSpot(TM) 64-Bit Server VM (build 21.0.8+12-LTS-250, mixed mode, sharing)
@@ -54,7 +54,7 @@ javac 21.0.8
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/BuildEvidence.java prepare 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/BuildEvidence.java prepare 
 Submission settings ready. Evidence will use a class-scoped hash of the computer name and a local random installation ID.
 [Pipeline] }
 [Pipeline] // script
@@ -67,7 +67,7 @@ Submission settings ready. Evidence will use a class-scoped hash of the computer
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/Build.java test 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/Build.java test 
 Compiled FestPass with Java 21.
 PASS emptyEventAcceptsBooking
 PASS lastAvailableSeatIsAccepted
@@ -113,7 +113,7 @@ Recording test results
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/Build.java package 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/Build.java package 
 Compiled FestPass with Java 21.
 BUILD SUCCESS: build/festpass.jar
 [Pipeline] }
@@ -127,7 +127,7 @@ BUILD SUCCESS: build/festpass.jar
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/SmokeTest.java 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/SmokeTest.java 
 PASS JAR: add-event (exit 0)
 PASS JAR: book (exit 0)
 PASS JAR: book (exit 2)
@@ -156,7 +156,7 @@ Recording fingerprints
 [Pipeline] isUnix
 [Pipeline] bat
 
-C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci>java ci/BuildEvidence.java "SUCCESS" 
+C:\Users\Lenovo\cloud-event\Jenkins_Laptop_Setup\jenkins-lab\runtime\agent-work\workspace\festpass-ci-email-corrected>java ci/BuildEvidence.java "SUCCESS" 
 Recorded submission-evidence.csv for Aryan Gupta, build 3, result SUCCESS.
 [Pipeline] }
 [Pipeline] // withEnv

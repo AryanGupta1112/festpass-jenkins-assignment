@@ -1,29 +1,29 @@
-$ java -jar festpass.jar --data DEMO_FILE add-event java Java Workshop 1
+$ java -jar festpass.jar --data demo.tsv add-event java "Java Workshop" 1
 EVENT CREATED: java
 [exit 0]
 
-$ java -jar festpass.jar --data DEMO_FILE book java S1
+$ java -jar festpass.jar --data demo.tsv book java S1
 BOOKING ACCEPTED: S1 -> java
 [exit 0]
 
-$ java -jar festpass.jar --data DEMO_FILE book java S2
+$ java -jar festpass.jar --data demo.tsv book java S2
 Invalid input: SOLD OUT. Even the developer needs a ticket.
 [exit 2]
 
-$ java -jar festpass.jar --data DEMO_FILE cancel java S1
+$ java -jar festpass.jar --data demo.tsv cancel java S1
 BOOKING CANCELLED: S1 -> java
 [exit 0]
 
-$ java -jar festpass.jar --data DEMO_FILE book java S2
+$ java -jar festpass.jar --data demo.tsv book java S2
 BOOKING ACCEPTED: S2 -> java
 [exit 0]
 
-$ java -jar festpass.jar --data DEMO_FILE roster java
+$ java -jar festpass.jar --data demo.tsv roster java
 ROSTER: java
 S2
 1 student(s)
 [exit 0]
 
-$ java -jar festpass.jar --data DEMO_FILE summary
+$ java -jar festpass.jar --data demo.tsv summary
 Events: 1 | Booked: 1 | Available: 0
 [exit 0]
