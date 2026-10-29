@@ -1,0 +1,162 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription": "Started by an SCM change"
+        }
+      ]
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.libs.LibrariesAction"
+    },
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "refs/remotes/origin/main": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 3,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+            "branch": [
+              {
+                "SHA1": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+                "name": "refs/remotes/origin/main"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+            "branch": [
+              {
+                "SHA1": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+                "name": "refs/remotes/origin/main"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+        "branch": [
+          {
+            "SHA1": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+            "name": "refs/remotes/origin/main"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git://127.0.0.1:9418/festpass-java"
+      ],
+      "scmName": ""
+    },
+    {},
+    {
+      "_class": "hudson.tasks.junit.TestResultAction",
+      "failCount": 0,
+      "skipCount": 0,
+      "totalCount": 28,
+      "urlName": "testReport"
+    },
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [
+    {
+      "displayPath": "build-info.txt",
+      "fileName": "build-info.txt",
+      "relativePath": "build/build-info.txt"
+    },
+    {
+      "displayPath": "festpass.jar",
+      "fileName": "festpass.jar",
+      "relativePath": "build/festpass.jar"
+    },
+    {
+      "displayPath": "smoke-test.txt",
+      "fileName": "smoke-test.txt",
+      "relativePath": "build/smoke-test.txt"
+    },
+    {
+      "displayPath": "submission-evidence.csv",
+      "fileName": "submission-evidence.csv",
+      "relativePath": "build/submission-evidence.csv"
+    }
+  ],
+  "building": false,
+  "description": null,
+  "displayName": "#3",
+  "duration": 18000,
+  "estimatedDuration": 28273,
+  "executor": null,
+  "fullDisplayName": "festpass-ci #3",
+  "id": "3",
+  "keepLog": false,
+  "number": 3,
+  "queueId": 5,
+  "result": "SUCCESS",
+  "timestamp": 1793281326373,
+  "url": "http://127.0.0.1:8081/job/festpass-ci/3/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/main/java/BookingService.java"
+          ],
+          "commitId": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+          "timestamp": 1793281278000,
+          "author": {
+            "absoluteUrl": "http://127.0.0.1:8081/user/aryan-gupta",
+            "fullName": "aryan-gupta"
+          },
+          "authorEmail": "aryan-gupta@users.invalid",
+          "comment": "Fix cancellation by removing the student from the event roster\n",
+          "date": "2026-10-29 19:11:18 +0530",
+          "id": "70f7339de746a18f71eda7ca88a01e166472c6ca",
+          "msg": "Fix cancellation by removing the student from the event roster",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/main/java/BookingService.java"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "culprits": [
+    {
+      "absoluteUrl": "http://127.0.0.1:8081/user/aryan-gupta",
+      "fullName": "aryan-gupta"
+    }
+  ],
+  "inProgress": false,
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 2,
+    "url": "http://127.0.0.1:8081/job/festpass-ci/2/"
+  }
+}

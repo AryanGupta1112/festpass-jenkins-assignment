@@ -1,0 +1,110 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user admin",
+          "userId": "admin",
+          "userName": "admin"
+        }
+      ]
+    },
+    {
+      "_class": "org.jenkinsci.plugins.workflow.libs.LibrariesAction"
+    },
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "refs/remotes/origin/main": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 1,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+            "branch": [
+              {
+                "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+                "name": "refs/remotes/origin/main"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+            "branch": [
+              {
+                "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+                "name": "refs/remotes/origin/main"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+        "branch": [
+          {
+            "SHA1": "d061dd329b9f423ee2aea1e5cb4e9862cfa24c6d",
+            "name": "refs/remotes/origin/main"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git://127.0.0.1:9418/festpass-java"
+      ],
+      "scmName": ""
+    },
+    {},
+    {
+      "_class": "hudson.tasks.junit.TestResultAction",
+      "failCount": 3,
+      "skipCount": 0,
+      "totalCount": 28,
+      "urlName": "testReport"
+    },
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [
+    {
+      "displayPath": "submission-evidence.csv",
+      "fileName": "submission-evidence.csv",
+      "relativePath": "build/submission-evidence.csv"
+    }
+  ],
+  "building": false,
+  "description": null,
+  "displayName": "#1",
+  "duration": 46634,
+  "estimatedDuration": 46634,
+  "executor": null,
+  "fullDisplayName": "festpass-ci #1",
+  "id": "1",
+  "keepLog": false,
+  "number": 1,
+  "queueId": 1,
+  "result": "FAILURE",
+  "timestamp": 1793281090971,
+  "url": "http://127.0.0.1:8081/job/festpass-ci/1/",
+  "changeSets": [],
+  "culprits": [],
+  "inProgress": false,
+  "nextBuild": null,
+  "previousBuild": null
+}

@@ -1,0 +1,147 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.triggers.SCMTrigger$SCMTriggerCause",
+          "shortDescription": "Started by an SCM change"
+        }
+      ]
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.libs.LibrariesAction"
+    },
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "refs/remotes/origin/main": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 2,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+            "branch": [
+              {
+                "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+                "name": "refs/remotes/origin/main"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+            "branch": [
+              {
+                "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+                "name": "refs/remotes/origin/main"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+        "branch": [
+          {
+            "SHA1": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+            "name": "refs/remotes/origin/main"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git://127.0.0.1:9418/festpass-java"
+      ],
+      "scmName": ""
+    },
+    {},
+    {
+      "_class": "hudson.tasks.junit.TestResultAction",
+      "failCount": 3,
+      "skipCount": 0,
+      "totalCount": 28,
+      "urlName": "testReport"
+    },
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.displayurlapi.actions.RunDisplayAction"
+    },
+    {
+      "_class": "org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartDeclarativePipelineAction"
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [
+    {
+      "displayPath": "submission-evidence.csv",
+      "fileName": "submission-evidence.csv",
+      "relativePath": "build/submission-evidence.csv"
+    }
+  ],
+  "building": false,
+  "description": null,
+  "displayName": "#2",
+  "duration": 20185,
+  "estimatedDuration": 33410,
+  "executor": null,
+  "fullDisplayName": "festpass-ci #2",
+  "id": "2",
+  "keepLog": false,
+  "number": 2,
+  "queueId": 3,
+  "result": "FAILURE",
+  "timestamp": 1793281211201,
+  "url": "http://127.0.0.1:8081/job/festpass-ci/2/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/main/java/FestPass.java"
+          ],
+          "commitId": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+          "timestamp": 1793281148000,
+          "author": {
+            "absoluteUrl": "http://127.0.0.1:8081/user/aryan-gupta",
+            "fullName": "aryan-gupta"
+          },
+          "authorEmail": "aryan-gupta@users.invalid",
+          "comment": "Personalize my help introduction\n",
+          "date": "2026-10-29 19:09:08 +0530",
+          "id": "cc6c21afbde5e04bd11fbffb049963a74aa33c09",
+          "msg": "Personalize my help introduction",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/main/java/FestPass.java"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "culprits": [
+    {
+      "absoluteUrl": "http://127.0.0.1:8081/user/aryan-gupta",
+      "fullName": "aryan-gupta"
+    }
+  ],
+  "inProgress": false,
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 1,
+    "url": "http://127.0.0.1:8081/job/festpass-ci/1/"
+  }
+}

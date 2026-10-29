@@ -1,0 +1,13 @@
+Started on Oct 29, 2026, 7:12:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision cc6c21afbde5e04bd11fbffb049963a74aa33c09 (refs/remotes/origin/main)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.1.windows.1'
+ > git.exe ls-remote -h -- git://127.0.0.1:9418/festpass-java # timeout=10
+Found 1 remote heads on git://127.0.0.1:9418/festpass-java
+[poll] Latest remote head revision on refs/heads/main is: 70f7339de746a18f71eda7ca88a01e166472c6ca
+Done. Took 0.2 sec
+Changes found
